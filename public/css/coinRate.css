@@ -1,0 +1,133 @@
+.setting {
+    background-color: var(--btns) !important;
+    color: var(--white) !important;
+}
+.btncust {
+    margin: 10px;
+    width: 12vw;
+    font-size: var(--btntextsize) !important;
+    border: 1px black solid;
+    background-color: var(--inactivebtn);
+}
+.btncust:hover {
+    background-color: var(--btns);
+}
+.active {
+    background-color: var(--btns) !important;
+}
+
+.navBar {
+    display: flex;
+
+    flex-direction: row;
+    gap: 7vh;
+    margin-top: 4vh;
+    margin-left: 17w;
+}
+
+.headerButton {
+    width: 12vw;
+    height: 8vh;
+    background-color: var(--inactivebtn);
+    border: 1px solid black;
+    border-radius: 2vh;
+}
+
+.headerButton:hover {
+    background-color: var(--btns);
+    color: var(--bs-white);
+}
+.checked {
+    background-color: var(--btns) !important;
+    color: var(--bs-white);
+}
+
+/* #back {
+    position: absolute;
+    bottom: 11.6vh;
+    left: 110vh;
+    width: 10vh !important;
+} */
+fieldset input {
+    width: 20vw !important;
+}
+.rowInput {
+    margin: 5%;
+}
+.coinImg {
+    width: 8%;
+    display: inline;
+}
+.reset {
+    width: 12% !important;
+    height: 6vh;
+    margin-left: 10vh !important;
+    margin-bottom: 10vh !important;
+    background-color: var(--btns);
+    color: var(--white);
+    border-radius: 1vh;
+    border: 1px solid black;
+}
+.change {
+    margin-top: 5vh;
+    margin-left: 30%;
+    width: 14%;
+    height: 6vh;
+    background-color: var(--btns);
+    border: 1px solid black;
+    color: var(--white);
+    border-radius: 1vh;
+}
+.table {
+    box-shadow: 3px 3px 10px silver;
+}
+.formHeader {
+    font-size: var(--title);
+}
+
+#back {
+    position: absolute;
+    margin-left: 0vw;
+    margin-top: 10vh;
+    width: 10%;
+    height: 5vh;
+    background-color: var(--btns);
+    border: 1px solid black;
+    color: var(--white);
+    border-radius: 1vh;
+}
+label,
+select,
+option {
+    font-size: var(--detail);
+}
+button {
+    font-size: var(--btntextsize);
+}
+
+.tableHeader {
+    background-color: var(--dashboardminlistingheader);
+    font-size: var(--tablerow);
+    font-weight: bold;
+}
+.tableChile {
+    background-color: var(--tablecolor1);
+}
+.tdWhite {
+    color: var(--white) !important;
+    font-size: var(--tablerow);
+}
+.tdBlack {
+    font-size: var(--tablerow);
+}
+.addAdminButton {
+    text-align: center;
+    margin-left: 67vw;
+}
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+a:hover {
+    color: var(--white);
+}

@@ -1,0 +1,50 @@
+<?php
+
+return [
+    // cart
+    'Food Lab' => 'Food Lab',
+    'yourCart' => 'YOUR CART',
+    'originalTotal' => 'Original Total',
+    'DeliveryFee' => 'Delivery Fee',
+    'GrandTotal' => 'Grand Total',
+    'Back' => 'Product Lists',
+    'Delivery' => 'Delivery',
+    'Copyright' => 'Copy right by Food Lab',
+    'Daily Sales' => 'Daily Sales',
+    'Monthly Sales' => 'Monthly Sales',
+    'Yearly Sales' => 'Yearly Sales',
+    'Range Sales' => 'Range Sales',
+    'Daily' => 'Daily',
+    'Monthly' => 'Monthly',
+    'Yearly' => 'Yearly',
+    'Range' => 'Range',
+    'Product' => 'Product',
+    'Quantity' => 'Quantity',
+    'Coin' => 'Coin',
+    'Cash' => 'Cash',
+    'Name' => 'Name',
+    'Phone' => 'Phone',
+    'Address' => 'Address',
+    'Cancel' => 'Cancel',
+    'Back' => 'Back',
+    'Reset' => 'Reset',
+    'Charge' => 'Charge',
+    'Order' => 'Order',
+    'Payment' => 'Payment',
+    'Delivery Information' => 'Delivery Information',
+    'No' => 'No',
+    'Date' => 'Date',
+    'Coin Amount' => 'Coin Amount',
+    'Coin Amount List' => 'Coin Amount List',
+    'Order Amount' => 'Order Amount',
+    'Order Amount List' => 'Order Amount List',
+    'Coin Charge' => 'Coin Charge',
+    'Screenshot' => 'Screenshot',
+    'Payment Accounts' => 'Payment Accounts',
+    'Coin Rule' => 'Coin Rule',
+    'Coin Calculator' => 'Coin Calculator',
+
+
+
+
+];

@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'ProductsAdd Form' => 'Products Add Form',
+    'ProductsEdit Form' => 'Products Edit Form',
+    'ProductName' => 'Product Name',
+    'Taste' => 'Taste',
+    'Type' => 'Type',
+    'CoinAmount' => 'Coin Amount',
+    'Ingredient' => 'Ingredient List',
+    'Description' => 'Description',
+    'ProductDetail' => 'Products Detail',
+    'Reset' => 'Reset',
+    'Product Add' => "Add Product",
+    'Back' => 'Back',
+    'Product Photo is required'=>'Product Photo is required.',
+    'Submit' => 'Submit',
+    'Update' => 'Update',
+    'Category' => 'Category',
+    'ProductList'=> 'Product List',
+    'ProductName is required' => 'Product name is required',
+    "Product's ingredient list is required." => "Product's ingredient list is required.",
+    "Product's Description is required." => "Product's Description is required.",
+    "Coin must be filled and negative sign can't assign."=> "Coin must be filled and negative sign can't assign.",
+    'No.' => 'No.',
+    'ProductId' => 'Product Id',
+    'Coin' => 'Coin',
+    'Amount' => 'Amount',
+    'Avaliable' => 'Avaliable',
+    'Edit' =>'Edit',
+    'shopnow' => 'Shop Now'
+];

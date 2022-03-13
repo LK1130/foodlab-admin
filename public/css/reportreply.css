@@ -1,0 +1,14 @@
+.rp {
+    margin: 10px;
+    width: 10vw;
+    border: 1px black solid;
+    font-size: var(--btntextsize) !important;
+}
+.back {
+    background-color: var(--btns);
+    color: var(--white) !important;
+}
+.brp {
+    background-color: var(--editbtn);
+    color: var(--white) !important;
+}

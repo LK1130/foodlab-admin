@@ -1,0 +1,12 @@
+.mains {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-photos {
+    width: 40%;
+}
