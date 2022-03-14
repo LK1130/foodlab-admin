@@ -1,0 +1,40 @@
+.tableheader {
+    background-color: var(--tablecolor1) !important;
+}
+.tablecolor1 {
+    background-color: var(--tablecolor2);
+}
+.boxshad {
+    box-shadow: 3px 10px 10px silver;
+}
+.roow {
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+.lidisplay {
+    list-style-type: none;
+}
+.title {
+    font-size: var(--title);
+}
+.detail {
+    font-size: var(--detail);
+}
+.tableheader {
+    background-color: var(--dashboardminlistingheader) !important;
+}
+.tablecolor1 {
+    background-color: var(--tablecolor1);
+}
+.btncust1 {
+    margin: 10px;
+    width: 12vw;
+    font-size: var(--btntextsize) !important;
+    border: 1px black solid;
+    background-color: var(--btns) !important;
+}
+.notification {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}

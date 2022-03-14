@@ -1,0 +1,28 @@
+:root {
+    /* Color list */
+    --dashboardbg: #9d8a8a;
+    --btns: #d4401f;
+    --logout: #b70b0b;
+    --dashboardminlistingheader: #d3a1a1;
+    --tablecolor1: #c4c4c4;
+    --tablecolor2: #9d8a8a;
+    --approvebtn: #32ab07;
+    --editbtn: #316ad8;
+    --inactivebtn: #c4c4c4;
+    --white: #ffffff;
+    --black: #000000;
+    /* Font Size List */
+    --fontsize1: 1rem;
+    --fontsize2: 2rem;
+    --fontsize3: 3rem;
+    --fontsize4: 4rem;
+
+    --fontsize1vw: 1vw;
+    --fontsize2vw: 2vw;
+    /* Text size */
+    --title: 2.3rem;
+    --detail: 1.5rem;
+    --tableheader: 1.7rem;
+    --btntextsize: 1.3vw;
+    --tablerow: 1rem;
+}
