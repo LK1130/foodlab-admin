@@ -32,6 +32,9 @@
             <!-- Range Sales Button -->
             <a href="rangeChart" class="me-5"><button id="rangeSales"
                     class="btn text-light inactive btncust">{{ __('messageCPPK.Range') }}</button></a>
+            <!-- Download Customer Informations Button -->
+            <a href="downloadCsvFile" class="me-2"><button id="downloadFile"
+                    class="btn text-light inactive btncust">{{ __('messageZY.downCus') }}</button></a>
         </div>
         <!-- For Monthly Chart-->
         <div id="lineChart">
@@ -104,7 +107,7 @@
         // For Sending Order Array to monthlyChart.js
         var orderArray = @json($orderArray);
         var orderMonthly = @json($orderMonthly);
-        
+
         // For Sending Coin Array to monthlyChart.js
         var coinArray = @json($coinArray);
         var coinMonthly = @json($coinMonthly);

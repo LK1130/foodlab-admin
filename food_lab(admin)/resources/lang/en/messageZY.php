@@ -140,8 +140,17 @@ return [
     'username'  => 'Admin Name',
     'Remaincoin' => 'Remain coin',
     'toback' => 'Back',
-    // 'Remaincoin' => 'Remaincoin',
-    // 'Remaincoin' => 'Remaincoin',
-    // 'Remaincoin' => 'Remaincoin',
+    'slider' => 'Slider',
+    'noslider' => 'No Slider has left.',
+    'addSlider' => 'Add Slider',
+    'buttonStatus' => 'Button Show',
+    'buttonText' => 'Button Text',
+    'buttonLink' => 'Button Link',
+    'sliderImage' => 'Slider Image',
+    'yourSliderImage' => 'Chosen Slider Image',
+    'editSlider' => 'Edit Slider',
+    'sliderImage' => 'Slider Image',
+    'downCus' => 'Download Info'
+
 
 ];

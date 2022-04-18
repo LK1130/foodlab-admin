@@ -37,6 +37,9 @@
             <!-- Range Sales Button -->
             <a href="rangeChart" class="me-5"><button id="rangeSales"
                     class="btn text-light inactive btncust">{{ __('messageCPPK.Range') }}</button></a>
+            <!-- Download Customer Informations Button -->
+            <a href="downloadCsvFile" class="me-2"><button id="downloadFile"
+                    class="btn text-light inactive btncust">{{ __('messageZY.downCus') }}</button></a>
         </div>
         <!-- For Daily Chart-->
         <div id="lineChart">

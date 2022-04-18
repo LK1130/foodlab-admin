@@ -433,6 +433,59 @@
                     <a href="{{ route('decision.create') }}" class="ms-auto decision"><button
                             class="btn text-light active btncust">{{ __('messageZY.add') }}</button></a>
                 </div>
+                <div class="tablediv">
+                    <h2>{{ __('messageZY.slider') }} </h2>
+                    <table class="table tableApp">
+                        <tr class="tableHeader">
+                            <th>{{ __('messageZY.number') }}</th>
+                            <th>{{ __('messageZY.title') }}</th>
+                            <th>{{ __('messageZY.detail') }}</th>
+                            <th>{{ __('messageZY.sliderImage') }}</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        @php
+                            $countSlider = 1;
+                        @endphp
+                        @forelse ($sliders as $slider)
+                            <tr class="tableChile">
+                                <th class="tdBlack">{{ $countSlider++ }}</td>
+                                <td class="tdBlack">{{ $slider->banner_title }}</td>
+                                <td class="tdBlack">{{ $slider->banner_detail }} </td>
+                                <td class="tdBlack"> <img src="/storage/sliderImageFile/{{ $slider->image }}"
+                                        alt="slider image" style="width: 70px; height:auto;"></td>
+                                <td></td>
+                                <td><a href="{{ route('slider.show', $slider->id) }}">
+                                        <button class="btn btn-outline-primary"><i
+                                                class="bi bi-pencil-square fs-5"></i></button>
+                                    </a></td>
+                                <td>
+                                    <form action="{{ route('slider.destroy', $slider->id) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-outline-danger delete">
+                                            <i class="bi bi-trash fs-5"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        @empty
+                            <tr class="tableChile">
+                                <td>{{ __('messageZY.noslider') }}</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        @endforelse
+
+                    </table>
+                    <a href="{{ route('slider.create') }}" class="ms-auto decision"><button
+                            class="btn text-light active btncust">{{ __('messageZY.add') }}</button></a>
+                </div>
             </div>
 
         </div>

@@ -31,6 +31,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailController;
 use App\Http\Controllers\ProductListController;
 use App\Http\Controllers\ProductSearchController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Routing\RouteGroup;
 use phpDocumentor\Reflection\DocBlock\Tag as DocBlockTag;
@@ -126,6 +127,7 @@ Route::group(['middleware' => ['checkAdmin']], function () {
     Route::resource('favtype', FavtypeController::class);
     Route::resource('orderstatus', OrderStatusController::class);
     Route::resource('decision', DecisionController::class);
+    Route::resource('slider', SliderController::class);
     //admin/setting/newsManage
     Route::resource('news', NewsController::class);
 
@@ -161,7 +163,14 @@ Route::group(['middleware' => ['checkAdmin']], function () {
   Route::get('customerReport', [NotificationController::class, 'customerReport']);
   Route::post('reportrp/{id}', [NotificationController::class, 'reportRp']);
   Route::get('reportreplies', [NotificationController::class, 'customerreportReply']);
+
   /**
+   * 
+   * Download File
+   */
+  Route::get('downloadCsvFile', [NotificationController::class, 'downloadCsvFile']);
+  /**
+   * 
    * Customer Contact
    */
   Route::get('customerContact', [NotificationController::class, 'customerContact']);

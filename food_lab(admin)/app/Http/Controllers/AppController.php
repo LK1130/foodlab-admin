@@ -20,6 +20,7 @@ class AppController extends Controller
         $favtypes =  $admin->favtypes();
         $orderStatus =  $admin->orderStatus();
         $desicions =  $admin->desicions();
+        $slider = $admin->sliders();
         return view(
             'admin.setting.appManage.appManage',
             [
@@ -30,7 +31,8 @@ class AppController extends Controller
                 'suggests' => $suggests,
                 'favtypes' => $favtypes,
                 'orderstatus' => $orderStatus,
-                'decisions' => $desicions
+                'decisions' => $desicions,
+                'sliders' => $slider
             ]
         );
     }

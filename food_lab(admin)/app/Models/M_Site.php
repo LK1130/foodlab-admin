@@ -178,6 +178,22 @@ class M_Site extends Model
         return M_Decison_Status::where('del_flg', '=', 0)->get();
     }
     /*
+    * Create:zayar(2022/04/12)
+    * Update:
+    * This function is used to get slider datas. (admin)
+    */
+    public function sliders()
+    {
+        Log::channel('adminlog')->info("M_Site Model", [
+            'Start sliders'
+        ]);
+        Log::channel('adminlog')->info("M_Site Model", [
+            'End sliders'
+        ]);
+        return M_Slider::where('del_flg', '=', 0)->get();
+    }
+
+    /*
    * Create:zayar(2022/01/13)
    * Update:
    * This function is used to get news datas. (admin)
