@@ -69,7 +69,7 @@ class NewsController extends Controller
 
         if ($request->hasFile('source')) {
             $file = $request->file('source');
-            $file->storeAs('newsImage', $file->getClientOriginalName());
+            $file->storePubliclyAs('newsImage', $file->getClientOriginalName());
         } else {
             echo "File Not Received";
         }

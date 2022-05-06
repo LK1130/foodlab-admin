@@ -176,7 +176,7 @@ class ProductController extends Controller
 
             for ($x = 0; $x < count($images); $x++) {
 
-                $path = $images[$x]->store('ProductImage');
+                $path = $images[$x]->storePublicly('ProductImage');
                 $phd->insertImage($path, $finalProduct, $x + 1);
             }
             for ($i = 0; $i < count($labels); $i++) {
@@ -350,28 +350,28 @@ class ProductController extends Controller
             $phd = new T_AD_Photo();
 
             if ($request->input('hide1')  == "" &&  $request->hasFile('photo1')) {
-                $path = $request->file('photo1')->store('ProductImage');
+                $path = $request->file('photo1')->storePublicly('ProductImage');
                 $phd->insertImage($path, $product, 1);
             }
             if ($request->input('hide2') == "" && $request->hasFile('photo2')) {
-                $path = $request->file('photo2')->store('ProductImage');
+                $path = $request->file('photo2')->storePublicly('ProductImage');
                 $phd->insertImage($path, $product, 2);
             }
 
             if ($request->input('hide3') == "" && $request->hasFile('photo3')) {
-                $path = $request->file('photo3')->store('ProductImage');
+                $path = $request->file('photo3')->storePublicly('ProductImage');
                 $phd->insertImage($path, $product, 3);
             }
             if ($request->input('hide4') == "" && $request->hasFile('photo4')) {
-                $path = $request->file('photo4')->store('ProductImage');
+                $path = $request->file('photo4')->storePublicly('ProductImage');
                 $phd->insertImage($path, $product, 4);
             }
             if ($request->input('hide5') == "" && $request->hasFile('photo5')) {
-                $path = $request->file('photo5')->store('ProductImage');
+                $path = $request->file('photo5')->storePublicly('ProductImage');
                 $phd->insertImage($path, $product, 5);
             }
             if ($request->input('hide6') == "" && $request->hasFile('photo6')) {
-                $path = $request->file('photo6')->store('ProductImage');
+                $path = $request->file('photo6')->storePublicly('ProductImage');
                 $phd->insertImage($path, $product, 6);
             }
 

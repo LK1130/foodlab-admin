@@ -51,7 +51,7 @@ class SliderController extends Controller
         ]);
         $request->validate([
             'title' => 'required|min:0|max:30',
-            'detail' => 'required|min:0|max:50',
+            'detail' => 'required|min:0|max:255',
             'buttonStatus' => 'required|integer|min:0|max:30',
             'buttonText' => 'min:0|max:20',
             'buttonLink' => 'max:50',
@@ -59,7 +59,7 @@ class SliderController extends Controller
         ]);
         if ($request->hasFile('sliderImage')) {
             $file = $request->file('sliderImage');
-            $file->storeAs('sliderImageFile', $file->getClientOriginalName());
+            $file->storePubliclyAs('sliderImageFile', $file->getClientOriginalName());
             $logo = $request->file('sliderImage');
             $sliderImage = $commonVar->STORAGE_PREFIX .'sliderImageFile/'
             .$logo->getClientOriginalName();
@@ -132,7 +132,7 @@ class SliderController extends Controller
         } else {
             if ($request->hasFile('sliderImage')) {
                 $file = $request->file('sliderImage');
-                $file->storeAs('sliderImageFile', $file->getClientOriginalName());
+                $file->storePubliclyAs('sliderImageFile', $file->getClientOriginalName());
                 $logo = $request->file('sliderImage');
                 $sliderImage = $logo->getClientOriginalName();
                 $admin = new M_Slider();

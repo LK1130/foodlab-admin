@@ -49,7 +49,7 @@ class SiteController extends Controller
 
         if ($request->hasFile('logo')) {
             $file = $request->file('logo');
-            $file->storeAs('siteLogo', $file->getClientOriginalName());
+            $file->storePubliclyAs('siteLogo', $file->getClientOriginalName());
             $logo = $request->file('logo');
             $siteLogo = $commonVar->STORAGE_PREFIX . 'siteLogo/'
             .$logo->getClientOriginalName();
