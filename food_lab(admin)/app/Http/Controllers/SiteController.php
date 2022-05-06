@@ -8,6 +8,7 @@ use App\Models\siteManage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
+use App\Common\Variable;
 
 class SiteController extends Controller
 {
@@ -30,6 +31,7 @@ class SiteController extends Controller
     // admin 
     public function store(Request $request)
     {
+        $commonVar = new Variable();
         Log::channel('adminlog')->info("SiteController", [
             'Start store'
         ]);
@@ -49,7 +51,8 @@ class SiteController extends Controller
             $file = $request->file('logo');
             $file->storeAs('siteLogo', $file->getClientOriginalName());
             $logo = $request->file('logo');
-            $siteLogo = $logo->getClientOriginalName();
+            $siteLogo = $commonVar->STORAGE_PREFIX . 'siteLogo/'
+            .$logo->getClientOriginalName();
             $admin = new M_Site();
             $admin->saveSiteUpdate($request, $siteLogo);
         } else {

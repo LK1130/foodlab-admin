@@ -25,4 +25,6 @@ class Variable
     public $WAIT = "WAITING";
     public $REJ = "REJECT";
 
+    //storage prefix
+    public $STORAGE_PREFIX = "https://food-lab-filesystem.sgp1.cdn.digitaloceanspaces.com/";
 }

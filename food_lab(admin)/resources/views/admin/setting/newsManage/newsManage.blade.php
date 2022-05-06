@@ -71,7 +71,7 @@
                     </tr>
                 @empty
                     <tr class="tableChile">
-                        <td>{{ __('messageZY.notownship') }}</td>
+                        <td>{{ __('messageZY.nonews') }}</td>
                         <td></td>
                         <td></td>
                         <td></td>

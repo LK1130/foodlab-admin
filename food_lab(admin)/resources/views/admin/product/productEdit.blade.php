@@ -45,11 +45,11 @@
                                 <div class="col-md-6 col-sm-10">
                                     <div class="mx-5 mt-4 p-4 blocks">
                                         <img id="img1" class="img-thumbnail"
-                                            src="@isset($phd[0]->path)/storage/{{ $phd[0]->path }}@endisset">
+                                            src="@isset($phd[0]->path){{ $phd[0]->path }}@endisset">
                                         </div>
                                         <div class="form-group mx-4 mt-2 mb-2">
                                             <input type="file" name="photo1" id="photo1" class="form-control files"
-                                                value="@isset($phd[0]->path)/storage/{{ $phd[0]->path }}@endisset"
+                                                value="@isset($phd[0]->path){{ $phd[0]->path }}@endisset"
                                                     accept="image/*">
                                                 <input type="hidden" name="hide1" id="hide1"
                                                     value="@isset($phd[0]->path){{ $phd[0]->path }}@endisset">
@@ -60,7 +60,7 @@
                                             <div class="col-md-6 col-sm-10">
                                                 <div class="mx-5 mt-4 p-4 blocks">
                                                     <img id="img2" class="img-thumbnail"
-                                                        src="@isset($phd[1]->path)/storage/{{ $phd[1]->path }}@endisset">
+                                                        src="@isset($phd[1]->path){{ $phd[1]->path }}@endisset">
                                                     </div>
                                                     <div class="form-group mx-4 mt-2 mb-2">
                                                         <input type="file" name="photo2" id="photo2" class="form-control files"
@@ -73,7 +73,7 @@
                                                     <div class="col-md-6 col-sm-10">
                                                         <div class="mx-5 mt-4 p-4 blocks">
                                                             <img id="img3" class="img-thumbnail"
-                                                                src="@isset($phd[2]->path)/storage/{{ $phd[2]->path }}@endisset">
+                                                                src="@isset($phd[2]->path){{ $phd[2]->path }}@endisset">
                                                             </div>
                                                             <div class="form-group mx-4 mt-2 mb-2">
                                                                 <input type="file" name="photo3" id="photo3" class="form-control files"
@@ -86,7 +86,7 @@
                                                             <div class="col-md-6 col-sm-10">
                                                                 <div class="mx-5 mt-4 p-4 blocks">
                                                                     <img id="img4" class="img-thumbnail"
-                                                                        src="@isset($phd[3]->path)/storage/{{ $phd[3]->path }}@endisset">
+                                                                        src="@isset($phd[3]->path){{ $phd[3]->path }}@endisset">
                                                                     </div>
                                                                     <div class="form-group mx-4 mt-2 mb-2">
                                                                         <input type="file" name="photo4" id="photo4" class="form-control files"
@@ -99,7 +99,7 @@
                                                                     <div class="col-md-6 col-sm-10">
                                                                         <div class="mx-5 mt-4 p-4 blocks">
                                                                             <img id="img5" class="img-thumbnail"
-                                                                                src="@isset($phd[4]->path)/storage/{{ $phd[4]->path }}@endisset">
+                                                                                src="@isset($phd[4]->path){{ $phd[4]->path }}@endisset">
                                                                             </div>
                                                                             <div class="form-group mx-4 mt-2 mb-2">
                                                                                 <input type="file" name="photo5" id="photo5" class="form-control files"
@@ -112,7 +112,7 @@
                                                                             <div class="col-md-6 col-sm-10">
                                                                                 <div class="mx-5 mt-4 p-4 blocks">
                                                                                     <img id="img6" class="img-thumbnail"
-                                                                                        src="@isset($phd[5]->path)/storage/{{ $phd[5]->path }}@endisset">
+                                                                                        src="@isset($phd[5]->path){{ $phd[5]->path }}@endisset">
                                                                                     </div>
                                                                                     <div class="form-group mx-4 mt-2 mb-2">
                                                                                         <input type="file" name="photo6" id="photo6" class="form-control files"

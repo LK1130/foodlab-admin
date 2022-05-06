@@ -9,6 +9,7 @@ use App\Models\NewsModel;
 use App\Models\SiteManage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use App\Common\Variable;
 
 class NewsController extends Controller
 {
@@ -56,6 +57,7 @@ class NewsController extends Controller
 
     public function store(Request $request)
     {
+        $commonVar = new Variable();
         Log::channel('adminlog')->info("NewsController", [
             'Start create'
         ]);
@@ -72,7 +74,8 @@ class NewsController extends Controller
             echo "File Not Received";
         }
         $logo = $request->file('source');
-        $siteLogo = $logo->getClientOriginalName();
+        $siteLogo =$commonVar->STORAGE_PREFIX . 'newsImage/'
+        .$logo->getClientOriginalName();
         $admin = new M_AD_News();
         $admin->newsAdd($request, $siteLogo);
         Log::channel('adminlog')->info("NewsController", [

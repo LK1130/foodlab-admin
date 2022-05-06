@@ -55,7 +55,7 @@
                         <img id="imgInitial" @if ($siteInfo == null)
                         src="{{ url('img/logo.png') }}"
                     @else
-                        src="/storage/siteLogo/{{ $siteInfo->site_logo }}"
+                        src="{{ $siteInfo->site_logo }}"
                         @endif
 
                         class="py-2 px-2" />

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use App\Common\Variable;
 
 class T_AD_Photo extends Model
 {
@@ -24,6 +25,7 @@ class T_AD_Photo extends Model
     public function insertImage($filepath, $product, $order)
     {
 
+        $commonVar = new Variable();
         Log::channel('adminlog')->info("T_AD_Photo Model", [
             'Start save Data'
         ]);
@@ -39,7 +41,7 @@ class T_AD_Photo extends Model
 
         $phd->link_id = $product->id;
         $phd->order_id = $order;
-        $phd->path = $filepath;
+        $phd->path = $commonVar->STORAGE_PREFIX. $filepath;
         $phd->note = "Product Image";
         $phd->save();
 

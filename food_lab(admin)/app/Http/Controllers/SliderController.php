@@ -7,6 +7,7 @@ use App\Http\Requests\SliderValidation;
 use App\Models\M_Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use App\Common\Variable;
 
 class SliderController extends Controller
 {
@@ -44,6 +45,7 @@ class SliderController extends Controller
      */
     public function store(Request $request)
     {
+        $commonVar = new Variable();
         Log::channel('adminlog')->info("SliderController", [
             'Start store'
         ]);
@@ -59,7 +61,8 @@ class SliderController extends Controller
             $file = $request->file('sliderImage');
             $file->storeAs('sliderImageFile', $file->getClientOriginalName());
             $logo = $request->file('sliderImage');
-            $sliderImage = $logo->getClientOriginalName();
+            $sliderImage = $commonVar->STORAGE_PREFIX .'sliderImageFile/'
+            .$logo->getClientOriginalName();
             $admin = new M_Slider();
             $admin->sliderAdd($request, $sliderImage);
         }

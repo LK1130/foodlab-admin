@@ -51,7 +51,7 @@ $(document).ready(function () {
                         $('#byCategory').append(
                             `<div class="col-md-3 col-sm-3 d-flex flex-column justify-content-center align-items-center m-auto my-3 fw-bold py-5">
                             <div class="image-container">
-                            <img src="/storage/${list.path}" class=" images" alt="bestitem1" />
+                            <img src="${list.path}" class=" images" alt="bestitem1" />
                             </div>
                             <p class="fs-3 pt-2">${ list.product_name }</p>
                             <p class="fs-5"><i class="fas fa-coins pe-2 coins"></i>${ list.coin } </br> <p> <i class="fa-solid fa-money-bill money text-success"></i> ${amount} MMK</p>
@@ -62,7 +62,7 @@ $(document).ready(function () {
                         $('#byCategory').append(
                             `<div class="col-md-3 col-sm-3 d-flex flex-column justify-content-center align-items-center m-auto my-3 fw-bold py-5">
                             <div class="image-container">
-                            <img src="/storage/${list.path}" class=" images" alt="bestitem1" />
+                            <img src="${list.path}" class=" images" alt="bestitem1" />
                             </div>
                             <p class="fs-3 pt-2">${ list.product_name }</p>
                             <p class="fs-5"><i class="fas fa-coins pe-2 coins"></i>${ list.coin } </br> <p> <i class="fa-solid fa-money-bill money text-success"></i> ${amount} MMK</p>
@@ -178,7 +178,7 @@ $(document).ready(function () {
                         $('#byTaste').append(
                             `<div class="col-md-3 col-sm-3 d-flex flex-column justify-content-center align-items-center m-auto my-3 fw-bold py-5">
                             <div class="image-container">
-                            <img src="/storage/${list.path}" class="img-fluid images" alt="bestitem1" />
+                            <img src="${list.path}" class="img-fluid images" alt="bestitem1" />
                             </div>
                             <p class="fs-3 pt-2">${ list.product_name }</p>
                             <p class="fs-5"><i class="fas fa-coins pe-2 coins"></i>${ list.coin } </br> <p> <i class="fa-solid fa-money-bill money text-success"></i> ${amount} MMK</p>
@@ -190,7 +190,7 @@ $(document).ready(function () {
                             $('#byTaste').append(
                                 `<div class="col-md-3 col-sm-3 d-flex flex-column justify-content-center align-items-center m-auto my-3 fw-bold py-5">
                                 <div class="image-container">
-                                <img src="/storage/${list.path}" class="img-fluid images" alt="bestitem1" />
+                                <img src="${list.path}" class="img-fluid images" alt="bestitem1" />
                                 </div>
                                 <p class="fs-3 pt-2">${ list.product_name }</p>
                                 <p class="fs-5"><i class="fas fa-coins pe-2 coins"></i>${ list.coin } </p> </br> <p> <i class="fa-solid fa-money-bill money text-success"></i> ${amount} MMK</p>

@@ -37,7 +37,7 @@
                     </div>
                     <div class="imgshow">
                         <p>{{ __('messageZY.chosenimage') }}</p>
-                        <img src="/storage/newsImage/{{ $news->source }}" alt="">
+                        <img src="{{ $news->source }}" alt="">
                     </div>
                     <div class="form-group mt-3 column">
                         <label for="note">{{ __('messageZY.category') }}</label>

@@ -25,8 +25,7 @@
 
         <div class="sliderImageSho" id="sliderImageShow">
             <label class="ms-2">{{ __('messageZY.yourSliderImage') }}</label>
-            {{-- <img src="/storage/sliderImageFile/{{ $slider->image }}" id="chosenImage"> --}}
-            <img src="/storage/sliderImageFile/{{ $slider->image }}" id="chosenImage">
+            <img src="{{ $slider->image }}" id="chosenImage">
         </div>
         <div class="adminAddForm">
             <form action="{{ route('slider.update', $slider->id) }}" method="POST" enctype="multipart/form-data">
